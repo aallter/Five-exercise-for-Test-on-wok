@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<body>
+
+  
+  <script>
+	//Polifidrom Ex #1
+	
+	/*let str='Lol'.toLowerCase();
+	console.log(str);
+	let str_two = str;
+	str_two = str_two.split("").reverse().join("");
+	console.log(str,str_two);
+	
+	if(str==str_two){
+		console.log("good");
+	}else{
+		console.log("no");
+	}*/
+	
+	
+	//FizBuzz #2
+	
+	/*let n;
+	let a=0;
+	let arr=[];
+	let Fizz = (n)=>{
+		for(let i=0;i<=n;i++){
+			
+			if(a%3==0 && a%5==0){
+				a='fizzBuzz';
+			}else if(a % 5 == 0){
+				a="buzz";
+			}else if(a % 3 == 0){
+				a="fizz";
+			}
+			arr.push(a);
+			a=i;
+			a++;
+		}
+		console.log(n,arr);
+	}
+	Fizz(20);*/
+	
+	//Anagrams #3
+	/*let count = 0;
+	let Anagram_Word = (word_one,word_two) =>{
+		word_one = word_one.toLowerCase().replace(/-|,|\s/g,"").split("");
+		word_two = word_two.toLowerCase().replace(/-|,|\s/g,"").split("");
+		//проверка мас==мас2?
+		if(word_one.length == word_two.length){
+		
+			for(let i=0;i<word_one.length;i++){
+				let symbul = word_one[i];
+				
+				for(let j=0;j<word_two.length;j++){
+					if(symbul==word_two[j]){
+						count++;
+						console.log("litter "+symbul+" = "+ word_two[j]);
+					}
+				}
+			
+			}
+			console.log(word_one,word_two);
+			console.log(count);
+			console.log("The words is anagrams");
+		}else{
+			console.log("Words can't be anagrams , because arr1 != arr2 ");
+			console.log(word_one,word_two);
+		}
+		
+	}
+	Anagram_Word('ro-n ,t','tr-- on');*/
+	
+	
+	//Find glass litters #4
+	/*let count = 0;
+	let Find_glas=(str)=>{
+		arr_str = str.toLowerCase().replace(/-|,|\s/g,"").split("");
+		let arr_gl=['a','o','e','i','u'];
+		
+		for(let i=0;i<arr_str.length;i++){
+			let sym =arr_str[i];
+			for(let j=0;j<arr_gl.length;j++){
+				if(sym==arr_gl[j]){
+					count++;
+				}
+			}
+		}
+		console.log(str," ",count);
+	}
+	Find_glas("mam mila ,ramu");*/
+	
+	
+	//Fibonachi #5
+	/*let arr=[0,1];
+	let Fibon =(n)=>{
+		console.log(n);
+		
+		let num; 
+		for(let i=2;i<=n;i++){
+				let pred_sym =arr[i-1];
+				let pres_sym =arr[i-2];
+				num = pres_sym + pred_sym;
+				arr.push(num);
+		}
+		return arr[n];
+	}
+	Fibon(10);
+	console.log(arr);*/
+  </script>
+</body>
+</html>
